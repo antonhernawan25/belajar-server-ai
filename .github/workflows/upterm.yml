@@ -1,0 +1,13 @@
+name: Debug dengan Upterm
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Jalankan sesi Upterm
+        uses: owenthereal/action-upterm@v1
